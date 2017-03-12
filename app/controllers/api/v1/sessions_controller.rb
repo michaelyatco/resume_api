@@ -4,9 +4,9 @@ class Api::V1::SessionsController < ApplicationController
   # end
 
   def create
-    @user = Student.find_by(email: params[:email])
-    if @user && @user.authenticate(params[:password])
-      # session[:user_id] = user.id
+    @student = Student.find_by(email: params[:email])
+    if @student && @student.authenticate(params[:password])
+      # session[:student_id] = student.id
       # flash[:success] = 'Successfully logged in!'
       render "show.json.jbuilder"
     else
@@ -17,7 +17,7 @@ class Api::V1::SessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:student_id] = nil
     flash[:success] = 'Successfully logged out!'
     redirect_to '/login'
   end
