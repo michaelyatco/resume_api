@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::V1::UsersController < ApplicationController
   def new
     render 'new.html.erb'
   end
@@ -11,12 +11,12 @@ class UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
     )
     if user.save
-      session[:user_id] = user.id
-      flash[:success] = 'Successfully created account!'
-      redirect_to '/'
+      # session[:user_id] = user.id
+      # flash[:success] = 'Successfully created account!'
+      render "show.json.jbuilder"
     else
-      flash[:warning] = 'Invalid email or password!'
-      redirect_to '/signup'
+      # flash[:warning] = 'Invalid email or password!'
+      render json: { errors: user.errors.full_messages }
     end
   end
 
