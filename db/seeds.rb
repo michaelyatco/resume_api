@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Capstone.create!([
   {name: "kitsch", description: "[\"Twee semiotics fashion axe. Typewriter selvage celiac sustainable kale chips. Freegan letterpress yolo tofu.\", \"Jean shorts sustainable wes anderson loko kinfolk williamsburg artisan gastropub. Echo shabby chic umami synth kale chips pitchfork. Try-hard hella pitchfork chambray normcore. Freegan taxidermy gentrify. Cleanse artisan blog mumblecore meditation.\", \"Lumbersexual intelligentsia roof narwhal kickstarter literally. Freegan carry tacos actually polaroid. Street gentrify echo park vice bespoke. Next level hammock brooklyn tacos.\"]", url: "leggings", screenshot: "https://pigment.github.io/fake-logos/logos/medium/color/13.png", student_id: 4},
   {name: "offal", description: "[\"Health godard forage lumbersexual. Bespoke narwhal paleo. Drinking street cray kale chips deep v.\", \"Swag echo intelligentsia iphone chartreuse aesthetic williamsburg. Crucifix lo-fi kickstarter polaroid trust fund yr. Shabby chic locavore loko.\", \"Cornhole blue bottle cold-pressed. Put a bird on it lomo tousled chia master yuccie pop-up. Sustainable shoreditch gentrify wolf brunch lo-fi mixtape aesthetic.\"]", url: "beard", screenshot: "https://pigment.github.io/fake-logos/logos/medium/color/7.png", student_id: 4},
@@ -98,3 +99,12 @@ Student.create!([
   {first_name: "Hermes", last_name: "Poseidon", email: "vladimir.cormier@metz.biz", phone_number: "76-910-5719", short_bio: "Vel nostrum rerum sunt omnis in inventore. Omnis labore et et id est quo culpa. Voluptas deleniti suscipit. Excepturi laborum aut quos. Laudantium ab exercitationem rerum veniam commodi.", linkedin_url: "linkedin.com/Madilyn Ledner", twitter_handle: "twitter.come/Felton Cole", personal_website_url: "Conner Beatty.com", online_resume_url: "resume.org/Clement Anderson", github_url: "github.com/Joel Simonis II", photo: "https://pigment.github.io/fake-logos/logos/medium/color/8.png", password_digest: nil},
   {first_name: "Hades", last_name: "Hestia", email: "omari@rohangerhold.name", phone_number: "96-198-7081", short_bio: "Quae dolores dolorem libero. Explicabo fuga voluptatem sint omnis aut est suscipit. Sint inventore ut quia repudiandae error enim accusantium. Molestiae id corporis tempora magni sit sint.", linkedin_url: "linkedin.com/Marguerite Schumm", twitter_handle: "twitter.come/Gene Shields", personal_website_url: "Colleen Reilly IV.com", online_resume_url: "resume.org/Arturo Stokes", github_url: "github.com/Caitlyn Conn", photo: "https://pigment.github.io/fake-logos/logos/medium/color/4.png", password_digest: nil}
 ])
+=======
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+>>>>>>> e8039d1d33b7a0c75847e2656d1155cd0e565532
