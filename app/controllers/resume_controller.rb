@@ -1,8 +1,8 @@
 class ResumeController < ApplicationController
   def index
-    @resumes = Resume.all
+    @students = Student.all
+    render 'index.json.jbuilder'
   end
-
   def show
     
   end
