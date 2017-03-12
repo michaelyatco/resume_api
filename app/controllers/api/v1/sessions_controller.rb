@@ -1,11 +1,11 @@
 class Api::V1::SessionsController < ApplicationController
-  def new
-    render 'new.html.erb'
-  end
+  # def new
+  #   render 'new.html.erb'
+  # end
 
   def create
-    user = User.find_by(email: params[:email])
-    if user && user.authenticate(params[:password])
+    @user = Student.find_by(email: params[:email])
+    if @user && @user.authenticate(params[:password])
       # session[:user_id] = user.id
       # flash[:success] = 'Successfully logged in!'
       render "show.json.jbuilder"
