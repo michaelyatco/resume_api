@@ -4,7 +4,7 @@ class ResumeController < ApplicationController
     render 'index.json.jbuilder'
   end
   def show
-    
+    @Student = Student.find_by(id: params[:id])
   end
 
   def new

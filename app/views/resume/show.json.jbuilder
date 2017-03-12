@@ -1,1 +1,2 @@
-show.html.erb
+
+render "display", variable: @student
