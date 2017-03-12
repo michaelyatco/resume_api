@@ -1,0 +1,2 @@
+
+render "display", variable: @student
