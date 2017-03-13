@@ -1,2 +1,1 @@
-
-render "display", variable: @student
+json.partial! "display.json.jbuilder", student: @student

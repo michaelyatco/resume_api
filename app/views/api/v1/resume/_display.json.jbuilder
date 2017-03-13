@@ -1,4 +1,4 @@
-json.array! variable.each do |student|
+
   json.id student.id
   json.first_name student.first_name
   json.last_name student.last_name
@@ -11,7 +11,7 @@ json.array! variable.each do |student|
   json.online_resume_url student.online_resume_url
   json.github_url student.github_url
   json.photo student.photo
-  json.skills students.skills.each do|skill|
+  json.skills student.skills.each do|skill|
     json.id skill.id
     json.skill_name skill.skill_name
   end
@@ -40,4 +40,4 @@ json.array! variable.each do |student|
   end
 
 
-end
+
