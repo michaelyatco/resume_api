@@ -32,7 +32,10 @@ class Api::V1::ResumeController < ApplicationController
     params[:capstones].each do |capstones_hash|
       capstone = Capstone.find_by(id: capstones_hash[:id])
       capstone.assign_attributes(name: params[:name], description: params[:description], url: params[:url], screenshot: params[:screenshot])
-      capstone.save
+      if capstone.save
+        redirect_to 'index.json.jbuilder'
+      else 
+        
     end
   end
 
